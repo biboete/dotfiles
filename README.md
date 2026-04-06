@@ -71,6 +71,12 @@ Easily switch themes on the fly with just one press. Keep your desktop fresh and
 
 Dive in, tweak to your heart's content, and transform your Windows environment into a beautifully riced masterpiece!
 
+<figure>
+  <img width="2559" height="1599" alt="Screenshot 2026-04-06 204530" src="https://github.com/user-attachments/assets/c1e16424-8707-43b7-a324-97142113a432" />
+  <figcaption align="center"><b>Screenshot: Working with multiple terminal windows including Claude Code.</b></figcaption>
+</figure>
+
+
 ---
 
 ## 🎨 Themes
