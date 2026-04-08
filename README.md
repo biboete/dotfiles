@@ -76,44 +76,41 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
   <figcaption align="center"><b>Screenshot: Working with multiple terminal windows including Claude Code.</b></figcaption>
 </figure>
 
-
 ---
 
 ## 🎨 Themes
 
 ℹ️Note: This dotfiles are configured specifically for my 1440p screen, so things might appear larger on smaller screens. I suggest using my dotfiles as a base and customizing it to fit your specific needs.
 
-### Jade
-
-|                            ✨ jade                             |
+|                            ❤️ jade ❤️                             |
 | :------------------------------------------------------------: |
-| A soul with raw edges, nostalgic warmth, and unspoken strength |
+| Introspective and layered, a soul with raw edges, nostalgic warmth, and unspoken strength |
 |              ![jade-1](rice-previews/jade-1.png)               |
 |              ![jade-2](rice-previews/jade-2.png)               |
 
-### Wasabi
-
-|                ✨ wasabi                |
+|                ❤️ wasabi ❤️                |
 | :-------------------------------------: |
-|         Mysterious and alluring         |
+|         Mysterious and alluring, with eyes like deep ocean blue and an aura of fire, she exudes both danger and enchantment         |
 | ![wasabi-1](rice-previews/wasabi-1.png) |
 | ![wasabi-2](rice-previews/wasabi-2.png) |
 
-### Aqua
-
-|               ✨ aqua               |
+|               ❤️ aqua ❤️              |
 | :---------------------------------: |
-|     Full of curiosity and charm     |
+|     A playful, mysterious girl with eyes like shimmering aqua, her movements graceful and quick, full of curiosity and charm     |
 | ![aqua-1](rice-previews/aqua-1.png) |
 | ![aqua-2](rice-previews/aqua-2.png) |
 
-### Shuri
-
-|               ✨ shuri                |
+|               ❤️ shuri ❤️               |
 | :-----------------------------------: |
-| A gentle presence in shades of purple |
+| A gentle presence in shades of purple, like twilight’s soft embrace—quietly comforting, effortlessly lovely |
 | ![shuri-1](rice-previews/shuri-1.png) |
 | ![shuri-2](rice-previews/shuri-2.png) |
+
+|               ❤️ tlinh ❤️               |
+| :-----------------------------------: |
+| Vibrant and dynamic, with rich colors and bold accents, she radiates energy and sophisticated elegance |
+| ![tlinh-1](rice-previews/tlinh-1.png) |
+| ![tlinh-2](rice-previews/tlinh-2.png) |
 
 <!--
 | 🕹️ arcade |
@@ -146,7 +143,7 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 
 ### Core Dependencies
 
-> ℹ️INFOℹ️: This project comes with a script to install all the dependencies listed below automatically. See (this)[scripts/install-packages.ps1] for the dependency installation script.
+> ℹ️ INFO ℹ️: This project comes with a script to install all the dependencies listed below automatically. See [this](scripts/install-packages.ps1) for the dependency installation script.
 
 - Terminal: **Windows Terminal**
 - Shell: **Zsh** inside MSYS2
@@ -163,7 +160,7 @@ You can customize each theme inside `~/.rice-manager/rices` and re-apply it (see
 - ☑️ GlazeWM border theme
 - ☑️ Zebar theme
 - ☑️ Desktop wallpaper based on rice
-- ☑️ Vscode theme
+- ☑️ VS Code theme
 - ~~☑️ Windows light/dark mode based on rice~~ ❌ Disabled - currently unstable and buggy
 - ❓ Windows color based on rice
 - 🚧 _under construction_
@@ -171,7 +168,6 @@ You can customize each theme inside `~/.rice-manager/rices` and re-apply it (see
 ---
 
 ## Installation Guide (last tested 19/01/2026, follow below video)
-
 
 <!-- ### Testing
 
@@ -206,8 +202,8 @@ If you don't want to display it, feel free to just leave it commented out(or del
 
 ### 0️⃣ Pre-install notices
 
-- Those installation steps are not fully verified and you might stuck at any step, if you're having problem, feel free to message me on my discord.
-- This dotfiles and it's previews are in 2560x1600 resolution, everything might look bigger on lower resolution.
+- Those installation steps are not fully verified and you might stuck at any step, if you're having problem, feel free to message me on my Discord.
+- This dotfiles and its previews are in 2560x1600 resolution, everything might look bigger on lower resolution.
 - Those installation steps won't break your windows, in case things didn't go well, all you need to do are:
   - `winget uninstall ...` all packages you have installed through `install-packages.ps1`
   - Remove added task scheduler tasks
@@ -215,7 +211,7 @@ If you don't want to display it, feel free to just leave it commented out(or del
 - If you have just fresh install windows 11 and your winget command is not working, you need to go to Microsoft Store and update your "App Installer".
 - For those who use another windows 11 version (like IOT Enterprise LTSC, which doesn't come with Microsoft Store):
   - First download the latest version of winget: <https://aka.ms/getwinget>
-  - Then open Powershell and run: `Add-AppxPackage -Path <path to downloaded .msixbundle>` to install winget
+  - Then open PowerShell and run: `Add-AppxPackage -Path <path to downloaded .msixbundle>` to install winget
 
 ### 1️⃣ Install Fonts
 
@@ -236,13 +232,13 @@ Font need to be download and install manually _(Windows is planning to allows in
 
 ### 3️⃣ Install packages
 
-- After chezmoi apply the dotfiles, the chezmoi source folder could be found in `%userprofile%/.local/share/chezmoi`, `install-packages.ps1` file can be found inside `scripts` folder (⚠️Note: Windows Terminal is now default open zsh shell which we haven't installed yet so it will show error if you try to open Windows Terminal, let's open Windows Powershell instead)
-- Enable allow execute powershell script in windows settings:
+- After chezmoi apply the dotfiles, the chezmoi source folder could be found in `%userprofile%/.local/share/chezmoi`, `install-packages.ps1` file can be found inside `scripts` folder (⚠️ Note: Windows Terminal is now default open zsh shell which we haven't installed yet so it will show error if you try to open Windows Terminal, let's open Windows PowerShell instead)
+- Enable allow execute PowerShell script in windows settings:
   ![image](https://github.com/user-attachments/assets/2b9c84f2-56d5-46f6-8ced-6e030ca5e47a)
   ![image](https://github.com/user-attachments/assets/70a6666e-b4ff-4f03-8299-4fd5acb12797)
 - Edit `install-packages.ps1`, comment out packages/apps that are not needed (All non-required packages are commented by default)
 - ⚠️ Note: If glazewm or zebar already installed, please uninstall them first before running the install script, this will make sure the versions are correct.
-- Run `install-packages.ps1` script with **Powershell** to install nessesary packages (⚠️ Note: sometime installation could fail, re-run the script to ensure all packages has been installed)
+- Run `install-packages.ps1` script with **PowerShell** to install necessary packages (⚠️ Note: sometime installation could fail, re-run the script to ensure all packages has been installed)
 
 ### 4️⃣ Add New Environment Variables
 
@@ -285,7 +281,7 @@ pacman -S zsh
 
 ```
 
-Open **Powershell**, from your user folder (Example: `C:\Users\JadeTam>`), run below command to install zsh themes and configs
+Open **PowerShell**, from your user folder (Example: `C:\Users\JadeTam>`), run below command to install zsh themes and configs
 
 <!--
 
@@ -315,16 +311,16 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ./.config/zsh/plugins
 git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zsh/plugins/zsh-history-substring-search
 ```
 
-**Troubleshoot:** If git is not recognizable, try close and reopen powershell or check whether git is installed through running `install-packages.ps1` or not.
+**Troubleshoot:** If git is not recognizable, try close and reopen PowerShell or check whether git is installed through running `install-packages.ps1` or not.
 
 ### 8️⃣ Install VS Code Extensions for Theming
 
 - Icons: [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - _best icon pack in my opinion_
 - Themes:
-  - [Tinted VSCode](https://marketplace.visualstudio.com/items?itemName=TintedTheming.base16-tinted-themes) - _using by other themes_
-  - [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox) - _using by Wasabi theme_
-  - [Everforest](https://marketplace.visualstudio.com/items?itemName=sainnhe.everforest) - _using by Jade theme
-  - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) - _using by Tlinh theme
+  - [Tinted VSCode](https://marketplace.visualstudio.com/items?itemName=TintedTheming.base16-tinted-themes) - _used by other themes_
+  - [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox) - _used by Wasabi theme_
+  - [Everforest](https://marketplace.visualstudio.com/items?itemName=sainnhe.everforest) - _used by Jade theme_
+  - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) - _used by Tlinh theme_
 - ADDITIONAL:
   - To change vscode UI Font, use this extension: [Fonted](https://marketplace.visualstudio.com/items?itemName=degreat.fonted)
   - To make VSCode window transparent: <https://marketplace.visualstudio.com/items?itemName=s-nlf-fh.glassit>
@@ -360,7 +356,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zs
 | Keys                                                                        | Action                                              |
 | :-------------------------------------------------------------------------- | :-------------------------------------------------- |
 | <kbd>alt</kbd> + <kbd>enter</kbd>                                           | Open terminal                                       |
-| <kbd>alt</kbd> + <kbd>Space</kbd>                                           | Open powertoy run                                   |
+| <kbd>alt</kbd> + <kbd>Space</kbd>                                           | Open Powertoys Run                                  |
 | <kbd>alt</kbd> + <kbd>h\|j\|k\|l</kbd>                                      | Focus window left \| bottom \| top \| right         |
 | <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>h\|j\|k\|l</kbd>                   | Move focusing window left \| bottom \| top \| right |
 | <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>q</kbd>                            | Close focusing window                               |
@@ -381,7 +377,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zs
 -->
 
 - Enable automatically hide the taskbar (for more vertical space).
-- Improve performance and reduce disk utilization for system with high amount of free RAM:
+- Improve performance and reduce disk utilization for systems with high amount of free RAM:
   - Run `scripts/high-ram-tuning.ps1` with **Powershell**.
 - Restore old context menu (Require restart):
   - Open/Run `scripts/Restore-old-context-menu.reg`.
@@ -398,12 +394,14 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zs
   - Navigate to `%USERPROFILE%\.glzr\glazewm`
   - Open `config.yaml` with preferred text editor(Notepad is fine)
   - Then, change this:
+
   ```yaml
   # ....
   window_behavior:
     initial_state: "floating"
   # ....
   ```
+
   - There are other configurable settings in this file, feel free to explore and tweak it to your liking.
 
 ### Other information
