@@ -1,0 +1,15 @@
+{
+  "windowsTheme": "dark",
+  "windowsTerminalTheme": "Monokai Pro",
+  "windowsTerminalFont": {
+    "cellHeight": "1.1",
+    "face": "CaskaydiaMono Nerd Font Mono",
+    "size": 14.5
+  },
+  "glazewmConfig": {
+    "focusedWindowsColor": "#ff6188",
+    "otherWindowsColor": "#221f22",
+    "windowsGap": "8px",
+    "cornerStyle": "rounded"
+  }
+}

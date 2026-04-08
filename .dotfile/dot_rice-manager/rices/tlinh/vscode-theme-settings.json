@@ -1,12 +1,10 @@
 {
   "workbench.colorTheme": "Monokai Pro",
-  "workbench.iconTheme": "Monokai Pro Icons",
-  "editor.fontFamily": "'CaskaydiaMono Nerd Font'",
-  "editor.fontSize": 18,
-  "terminal.integrated.fontSize": 18,
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#ff6188",
-    "terminalCursor.foreground": "#ff6188"
-  },
-  "fonted.font": "CaskaydiaMono Nerd Font"
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#ab9df2",
+  "material-icon-theme.files.color": "#a9dc76",
+  "editor.fontFamily": "'CaskaydiaMono Nerd Font Mono'",
+  "editor.fontSize": 20,
+  "terminal.integrated.fontSize": 20,
+  "fonted.font": "CaskaydiaMono Nerd Font Mono"
 }

@@ -6,7 +6,7 @@
 #  About   :  This file will configure and launch the rice.
 #
 
-avaiableThemes=("aqua" "wasabi" "shuri" "jade")
+avaiableThemes=("aqua" "wasabi" "shuri" "jade" "tlinh")
 
 usage() {
   printf "
@@ -17,6 +17,7 @@ Usage:
 \t[wasabi] \t Mysterious and alluring, with eyes like deep ocean blue and an aura of fire, she exudes both danger and enchantment
 \t[shuri] \t A gentle presence in shades of purple, like twilight’s soft embrace—quietly comforting, effortlessly lovely
 \t[jade] \t Introspective and layered, a soul with raw edges, nostalgic warmth, and unspoken strength
+\t[tlinh] \t Vibrant and dynamic, with rich colors and bold accents, she radiates energy and sophisticated elegance
 "
 }
 

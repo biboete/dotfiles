@@ -225,6 +225,7 @@ Font need to be download and install manually _(Windows is planning to allows in
 - [Pixel Code](https://qwerasd205.github.io/PixelCode/)
 - [Monofur Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Monofur.zip)
 - [Space Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SpaceMono.zip)
+- [CaskaydiaCove Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip) (used by tlinh theme)
 
 ### 2️⃣ Install chezmoi and apply dotfiles
 
@@ -322,7 +323,8 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zs
 - Themes:
   - [Tinted VSCode](https://marketplace.visualstudio.com/items?itemName=TintedTheming.base16-tinted-themes) - _using by other themes_
   - [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox) - _using by Wasabi theme_
-  - [Everforest](https://marketplace.visualstudio.com/items?itemName=sainnhe.everforest) - _using by Jade theme_
+  - [Everforest](https://marketplace.visualstudio.com/items?itemName=sainnhe.everforest) - _using by Jade theme
+  - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) - _using by Tlinh theme
 - ADDITIONAL:
   - To change vscode UI Font, use this extension: [Fonted](https://marketplace.visualstudio.com/items?itemName=degreat.fonted)
   - To make VSCode window transparent: <https://marketplace.visualstudio.com/items?itemName=s-nlf-fh.glassit>
