@@ -1,5 +1,17 @@
 # aquapaka-dotfiles
 
+## 3.5.0
+
+### Minor Changes
+
+- f772a9e: feat: add tlinh theme
+
+### Patch Changes
+
+- 8a5ad67: chore: clean up old theme files
+- a233289: docs: refine readme, add tlinh theme previews
+- 7e13bd9: chore: update project author name
+
 ## 3.4.0
 
 ### Minor Changes
