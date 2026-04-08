@@ -3,7 +3,7 @@
 high-ram-tuning
 #  Wackground
 #  Author  :  aquapaka
-#  Url     :  https://github.com/aquapaka/dotfiles
+#  Url     :  https://github.com/jade-tam/dotfiles
 #  About   :  This script improve performance and reduce disk utilization on system with high amount of free RAM.
 #>
 

@@ -2,7 +2,7 @@
 
 #  Rice script
 #  Author  :  jadetam (aquapaka)
-#  Url     :  https://github.com/jadetam/dotfiles
+#  Url     :  https://github.com/jade-tam/dotfiles
 #  About   :  This file will configure and launch the rice.
 #
 

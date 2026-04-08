@@ -3,7 +3,7 @@
 show-cpu-frequency-power-plan-setting
 #  Wackground
 #  Author  :  aquapaka
-#  Url     :  https://github.com/aquapaka/dotfiles
+#  Url     :  https://github.com/jade-tam/dotfiles
 #  About   :  This script showing maximum cpu frequency in power plan setting.
 #>
 

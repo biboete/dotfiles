@@ -3,7 +3,7 @@
 Wackground
 #  Wackground
 #  Author  :  jadetam (aquapaka)
-#  Url     :  https://github.com/jadetam/dotfiles
+#  Url     :  https://github.com/jade-tam/dotfiles
 #  About   :  This script used to set windows desktop background.
 
 .DESCRIPTION
