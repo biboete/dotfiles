@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #  Rice script
-#  Author  :  aquapaka
-#  Url     :  https://github.com/aquapaka/dotfiles
+#  Author  :  jadetam (aquapaka)
+#  Url     :  https://github.com/jadetam/dotfiles
 #  About   :  This file will configure and launch the rice.
 #
 

@@ -2,8 +2,8 @@
 .SYNOPSIS
 Wackground
 #  Wackground
-#  Author  :  aquapaka
-#  Url     :  https://github.com/aquapaka/dotfiles
+#  Author  :  jadetam (aquapaka)
+#  Url     :  https://github.com/jadetam/dotfiles
 #  About   :  This script used to set windows desktop background.
 
 .DESCRIPTION
