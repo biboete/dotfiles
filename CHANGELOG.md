@@ -1,5 +1,11 @@
 # aquapaka-dotfiles
 
+## 3.6.0
+
+### Minor Changes
+
+- 2fbfe0f: feat: use newer version of glazewm and zebar
+
 ## 3.5.0
 
 ### Minor Changes
