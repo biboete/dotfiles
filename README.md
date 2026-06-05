@@ -109,8 +109,9 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 |               ❤️ tlinh ❤️               |
 | :-----------------------------------: |
 | Vibrant and dynamic, with rich colors and bold accents, she radiates energy and sophisticated elegance |
-| ![tlinh-1](rice-previews/tlinh-1.png) |
-| ![tlinh-2](rice-previews/tlinh-2.png) |
+| <img width="2555" height="1598" alt="tlinh screenshot 1" src="https://github.com/user-attachments/assets/9715c20b-8c37-4df5-977a-80ff13bf0ba0" /> |
+| <img width="2558" height="1598" alt="tlinh screenshot 2" src="https://github.com/user-attachments/assets/3defca09-7ae1-4be8-9235-c9bc47111c96" /> |
+
 
 <!--
 | 🕹️ arcade |
@@ -221,7 +222,7 @@ Font need to be download and install manually _(Windows is planning to allows in
 - [Pixel Code](https://qwerasd205.github.io/PixelCode/)
 - [Monofur Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Monofur.zip)
 - [Space Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SpaceMono.zip)
-- [CaskaydiaCove Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip) (used by tlinh theme)
+- [DepartureMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DepartureMono.zip) (used by tlinh theme)
 
 ### 2️⃣ Install chezmoi and apply dotfiles
 
