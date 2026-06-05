@@ -80,33 +80,33 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 
 ## 🎨 Themes
 
-ℹ️Note: This dotfiles is configured for 2560x1600 resolution + 125% windows display scale (like the previews below), so it might looks nearly the same as 1920x1200 at 100% scale, everything might look bigger on lower resolution. I suggest using my dotfiles as a base and customizing it to fit your specific needs.
+ℹ️Note: Since version 3.7.0, this dotfiles is configured for 2560x1600 resolution + 125% windows display scale (see previews below), it might looks nearly the same as 1920x1200 at 100% scale, on lower resolution everything might look bigger. I suggest using my dotfiles as a base and customizing it to fit your specific needs (See **⚙ Configure and customize themes** section).
 
-|                            ❤️ jade ❤️                             |
+| ❤️ jade ❤️ |
 | :------------------------------------------------------------: |
 | Introspective and layered, a soul with raw edges, nostalgic warmth, and unspoken strength |
 | <img width="2558" height="1598" alt="Jade 1" src="https://github.com/user-attachments/assets/1185e4e5-c7ca-4f5e-a402-27c34d2e9d05" /> |
 | <img width="2558" height="1598" alt="Jade 2" src="https://github.com/user-attachments/assets/1ba92092-d76e-4a2a-bbeb-8156a21ce013" /> |
 
-|                ❤️ wasabi ❤️                |
+| ❤️ wasabi ❤️ |
 | :-------------------------------------: |
-|         Mysterious and alluring, with eyes like deep ocean blue and an aura of fire, she exudes both danger and enchantment         |
+| Mysterious and alluring, with eyes like deep ocean blue and an aura of fire, she exudes both danger and enchantment |
 | <img width="2558" height="1598" alt="Screenshot 2026-06-05 174919" src="https://github.com/user-attachments/assets/fde5f200-c1fd-44c5-b648-6f87c7a4e81c" /> |
 | <img width="2558" height="1598" alt="Screenshot 2026-06-05 174935" src="https://github.com/user-attachments/assets/5952de84-ca04-461a-a722-855032eed52b" /> |
 
-|               ❤️ aqua ❤️              |
+| ❤️ aqua ❤️ |
 | :---------------------------------: |
-|     A playful, mysterious girl with eyes like shimmering aqua, her movements graceful and quick, full of curiosity and charm     |
-| ![aqua-1](rice-previews/aqua-1.png) |
-| ![aqua-2](rice-previews/aqua-2.png) |
+| A playful, mysterious girl with eyes like shimmering aqua, her movements graceful and quick, full of curiosity and charm |
+| <img width="2558" height="1598" alt="Screenshot 2026-06-05 184254" src="https://github.com/user-attachments/assets/167a2378-e2fc-4de4-b934-a93aa4cb8aa2" /> |
+| <img width="2558" height="1598" alt="Screenshot 2026-06-05 184230" src="https://github.com/user-attachments/assets/a4252a4d-2e3f-4efe-8acc-1a2a0e7362eb" /> |
 
-|               ❤️ shuri ❤️               |
+| ❤️ shuri ❤️ |
 | :-----------------------------------: |
 | A gentle presence in shades of purple, like twilight’s soft embrace—quietly comforting, effortlessly lovely |
 | <img width="2558" height="1598" alt="Screenshot 2026-06-05 171859" src="https://github.com/user-attachments/assets/a20319b6-14b9-4b3a-940c-94f7267fe99d" /> |
 | <img width="2558" height="1598" alt="Screenshot 2026-06-05 172142" src="https://github.com/user-attachments/assets/0f382ab4-3116-4fa1-971c-91198144e1ac" /> |
 
-|               ❤️ tlinh ❤️               |
+| ❤️ tlinh ❤️ |
 | :-----------------------------------: |
 | Vibrant and dynamic, with rich colors and bold accents, she radiates energy and sophisticated elegance |
 | <img width="2555" height="1598" alt="tlinh screenshot 1" src="https://github.com/user-attachments/assets/9715c20b-8c37-4df5-977a-80ff13bf0ba0" /> |
@@ -131,12 +131,7 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 | Gentle and wise, truly exceptional |
 |![khlinh-1](rice-previews/khlinh-1.png)|
 |![khlinh-2](rice-previews/khlinh-2.png)|
-
-| 💜 shuri |
-| :---: |
-| Radiant love for purple, deeply cherished soul, mah lovely queen 👑 |
-|![shuri-1](rice-previews/shuri-1.png)|
-|![shuri-2](rice-previews/shuri-2.png)| -->
+-->
 
 ---
 
@@ -153,34 +148,30 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 
 ---
 
-## 📦 Installation Guide (last tested 19/01/2026, follow below video)
+## ⛏️ Upgrading guide (for existing users)
 
-<!-- ### Testing
+1. Open terminal, move to chezmoi source folder then use git pull to get the latest changes from this repo:
+```
+# Inside our terminal with zsh shell run those commands
+cmsp
+git pull
+```
+2. Apply the new changes then switch theme to see the new changes:
+```
+chezmoi apply
+rice wasabi
+```
+3. By default, our install-packages.ps1 script lock the glazewm and zebar versions at a stable tested version (to prevent future version accidentally break our dotfiles), so upgrade existing version from winget won't work, if there are newer versions we have to remove them and run install-packages.ps1 again:
+```
+winget uninstall glazewm
+winget uninstall zebar
+powershell ~/.local/share/chezmoi/scripts/install-packages.ps1
+```
+4. New dotfiles version could use additional fonts, check if there are fonts you haven't installed from **"1️⃣ Install Fonts"** section below then install them (fonts won't work until restarted)
 
-- This project has been officially tested and works 100% (as of 19/1/2026) by the author. -->
+---
 
-<!--
-To the owner of the repository
-Feel free to uncomment the section down below to display my testing environment details in the README.
-
-If you don't want to display it, feel free to just leave it commented out(or delete it entirely).
- -->
-
-<!-- This project has been unoffically tested by Neko and partially works(as of 21/10/2025)
-  - Windows 11 Home Single Language 25H2(26200.6901)
-  - Laptop: ASUS TUF Gaming A15
-    - CPU: AMD Ryzen 7435HS
-    - GPU: NVIDIA GeForce RTX 3050 Laptop GPU
-    - RAM: 16GB DDR5
-    - Screen: 1920x1080 @ 144Hz
-  - Software versions:
-    - Winget: v1.11.510
-    - Windows Terminal: v1.23.12811.0
-
-  - Experienced Issues:
-    - Tiling is not working properly, applications like Web Browsers(Floorp) are either fullscreened or minimized
-    - Alt+Tab is broken for the above
-    - Common executables like run, or even properties of a file/folder are opened behind the current explorer window -->
+## 📦 Installation Guide (for new user, last tested 04/06/2026, follow below video)
 
 ### 🔥 Step By Step Installation Video ⭐
 
@@ -292,10 +283,10 @@ Open **PowerShell**, from your user folder (Example: `C:\Users\JadeTam>`, which 
 
 ---
 
-## 📑 Basic usage
-
 > ⚠️ ATTENTION ⚠️
-> This section assumes you have followed the installation steps above and everything is working properly
+> Section below assumes you have followed the installation steps above and everything is working properly
+
+## 📑 Basic usage
 
 ### Change theme
 
