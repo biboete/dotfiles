@@ -2,157 +2,106 @@
  * Import the Nerdfonts icon font.
  * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
  */
-
-.red {
-  color: #ff6188;
-}
-
-.blue {
-  color: #59c6ff;
-}
-
-.green {
-  color: #a9dc76;
-}
-
-.yellow {
-  color: #ffd866;
+:root {
+  --color-foreground: #fdf9f3;
+  --color-foreground-30: #fdf9f34d;
+  --color-background: #221F22;
+  --color-background-90: #221F22E6;
+  --color-black: #665C51;
+  --color-red: #ff6188;
+  --color-green: #a9dc76;
+  --color-blue: #59c6ff;
+  --color-yellow: #ffd866;
+  --color-magenta: #ab9df2;
+  --color-cyan: #78dce8;
+  --color-white: #fdf9f3;
 }
 
 .black {
-  color: #665C51;
+  color: var(--color-black);
 }
 
-.cyan {
-  color: #78dce8;
+.red {
+  color: var(--color-red);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.yellow {
+  color: var(--color-yellow);
 }
 
 .magenta {
-  color: #ab9df2;
+  color: var(--color-magenta);
+}
+
+.cyan {
+  color: var(--color-cyan);
 }
 
 .white {
-  color: #fdf9f3;
+  color: var(--color-white);
 }
 
-html,
-body,
-#root {
-  height: 100%;
-}
 
-body {
-  color: #fdf9f3;
-  font-family: "CaskaydiaMono Nerd Font Mono", ui-monospace, monospace;
-  font-size: 14.5pt;
-  overflow: hidden;
+:root {
+  height: 100vh;
+  color: var(--color-foreground);
+  font-family: "DepartureMono Nerd Font";
+  font-size: 16px;
   padding: 0px;
   padding-bottom: 0;
 }
 
+body,
 #root {
-  border: 0px solid #ab9df2;
-  border-radius: 0px;
-  background: rgb(34 31 34 / 90%); /* Based on tlinh background #221f22 */
+  height: 100%;
+  margin: 0; /* Also helpful to remove default spacing */
 }
 
-/* =================================================================== */
-/* NEW: Scale to fit smaller screen size */
-
 .app {
-  display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
-  align-items: center;
   height: 100%;
-  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0px solid var(--color-green);
+  background-color: var(--color-background-90);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .left,
 .center,
 .right {
-  width: 100%; /* 🟢 Fill the grid cell */
-  height: 100%; /* 🟢 Optional, for vertical fill */
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  overflow: hidden;
+  height: 100%;
+  gap: 0.5rem;
 }
 
-.left {
-  justify-content: flex-start;
-}
-.center {
-  justify-content: center;
-}
-.right {
-  justify-content: flex-end;
-}
-
-.scale-wrapper {
-  transform: scale(0.75);
-  display: flex;
-}
-
-.left-scale {
-  transform-origin: center left; /* or center / center right depending */
-  justify-content: left;
-}
-.center-scale {
-  transform-origin: center; /* or center / center right depending */
-  justify-content: center;
-}
-.right-scale {
-  transform-origin: center right; /* or center / center right depending */
-  justify-content: end;
-}
-
-.scale-wrapper {
-  transform: scale(1);
-}
-
-.right-scale > div,
-.left-scale > div {
+.box {
+  height: 100%;
   display: flex;
   align-items: center;
+  /* background-color: var(--color-background-90); */
+  border-width: 1px;
+  border-color: var(--color-background);
+  border-radius: 4px;
+  position: relative;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
-
-@media (min-width: 2100px) {
-  .left,
-  .center,
-  .right {
-    padding-bottom: 0px;
-  }
-}
-
-@media (max-width: 1920px) {
-  .scale-wrapper {
-    transform: scale(0.75);
-  }
-}
-
-@media (max-width: 1600px) {
-  .scale-wrapper {
-    transform: scale(0.625);
-  }
-}
-
-@media (max-width: 1440px) {
-  .scale-wrapper {
-    transform: scale(0.562);
-  }
-}
-
-@media (max-width: 1366px) {
-  .scale-wrapper {
-    transform: scale(0.533);
-  }
-}
-/* =================================================================== */
 
 .info {
   display: inline-block;
   /* Max width for EACH info text */
-  max-width: 430px;
+  max-width: 360px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -161,129 +110,115 @@ body {
 
 .icon {
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 0.8rem;
 }
 
 .os-icon {
-  font-size: 1.6rem;
-}
-
-.uptime-icon {
-  padding-left: 20px;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .media-icon {
-  padding-left: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.binding-mode {
+  background-color: var(--color-yellow);
+  border-radius: 2px;
+  border: none;
+  margin-right: 0.5rem;
 }
 
 .tiling-direction-icon {
+  font-size: 1.2rem;
   background: none;
   border: 0;
   cursor: pointer;
-  transform: translate(0px, 1px);
+  color: var(--color-yellow);
 }
 
 .ethernet-icon {
-  padding-left: 12px;
-  transform: translate(4px, 2px);
-  font-size: 1.8rem;
-  margin-top: -4px;
+  color: var(--color-green);
+  font-size: 1.2rem;
 }
 
 .wifi-icon {
-  padding-left: 12px;
-  transform: translate(6px, 3px);
-  font-size: 1.6rem;
-  margin-top: -4px;
+  color: var(--color-green);
+  font-size: 1.2rem;
 }
 
 .cpu-icon {
-  padding-left: 24px;
-  transform: translate(0px, -1px);
-  font-size: 1.8rem;
-  margin-top: 2px;
-  margin-right: 6px;
+  color: var(--color-red);
+  font-size: 1.2rem;
 }
 
 .memory-icon {
-  padding-left: 17px;
-  transform: translate(6px, 0px);
-  font-size: 2rem;
+  color: var(--color-green);
+  font-size: 1.2rem;
 }
 
 .battery-icon {
-  padding-left: 5px;
-  transform: translate(6px, 2px);
-  margin-top: -4px;
-  margin-right: 14px;
-}
-
-.battery {
-  padding-left: 8px;
-  position: relative;
+  color: var(--color-yellow);
+  font-size: 1.2rem;
+  transform: translateX(0.3rem);
 }
 
 .charging-icon {
   z-index: 100;
   position: absolute;
-  right: 21px;
-  bottom: -2px;
+  left: 1rem;
+  bottom: 0.4rem;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 1));
+  color: var(--color-blue);
 }
 
 .full-icon {
-  font-size: 0.9rem;
+  color: var(--color-green);
+  font-size: 0.7rem;
   z-index: 100;
   position: absolute;
-  right: 21px;
-  bottom: 5px;
+  left: 1rem;
+  bottom: 0.8rem;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 1));
 }
 
 .audio-icon {
-  padding-left: 0px;
-  font-size: 2rem;
-  transform: translate(9px, 1.5px);
-  margin-top: -6px;
+  color: var(--color-cyan);
+  font-size: 1.2rem;
 }
 
 .weather-icon {
-  padding-left: 20px;
-  transform: translate(1px, -1px);
-  font-size: 1.6rem;
-  margin-top: 2px;
+  font-size: 1.2rem;
 }
 
 .date-icon {
-  padding-left: 16px;
-  transform: translate(2px, 0px);
-  font-size: 1.8rem;
+  color: var(--color-magenta);
+  font-size: 1.2rem;
 }
 
-.workspaces {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.workspace {
-  font-size: 28pt;
+.workspace-button {
+  font-size: 1.2rem;
   background: none;
-  margin-right: 4px;
-  padding: 0px 4px;
-  color: #665C51;
-  border: none;
-  border-radius: 2px;
+  color: var(--color-foreground-30);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   cursor: pointer;
+  border: none;
 
   &.has-child {
-    color: #fdf9f3;
+    color: var(--color-foreground);
   }
 
   &.focused,
   &:hover {
-    color: #ff6188;
+    color: var(--color-red);
   }
+
+  &.focused {
+    transform: translateY(0.05rem);
+  }
+}
+
+.workspace-icon {
+  display: inline-block;
+  transform: translateX(-0.2rem);
 }
