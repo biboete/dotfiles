@@ -85,8 +85,8 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 |                            ❤️ jade ❤️                             |
 | :------------------------------------------------------------: |
 | Introspective and layered, a soul with raw edges, nostalgic warmth, and unspoken strength |
-|              ![jade-1](rice-previews/jade-1.png)               |
-|              ![jade-2](rice-previews/jade-2.png)               |
+| <img width="2558" height="1598" alt="Jade 1" src="https://github.com/user-attachments/assets/1185e4e5-c7ca-4f5e-a402-27c34d2e9d05" /> |
+| <img width="2558" height="1598" alt="Jade 2" src="https://github.com/user-attachments/assets/1ba92092-d76e-4a2a-bbeb-8156a21ce013" /> |
 
 |                ❤️ wasabi ❤️                |
 | :-------------------------------------: |
