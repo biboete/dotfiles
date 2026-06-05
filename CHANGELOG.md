@@ -1,5 +1,11 @@
 # aquapaka-dotfiles
 
+## 3.7.1
+
+### Patch Changes
+
+- 1912eda: chore: clean up unused files
+
 ## 3.7.0
 
 ### Minor Changes
