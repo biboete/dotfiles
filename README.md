@@ -103,8 +103,8 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 |               ❤️ shuri ❤️               |
 | :-----------------------------------: |
 | A gentle presence in shades of purple, like twilight’s soft embrace—quietly comforting, effortlessly lovely |
-| ![shuri-1](rice-previews/shuri-1.png) |
-| ![shuri-2](rice-previews/shuri-2.png) |
+| <img width="2558" height="1598" alt="Screenshot 2026-06-05 171859" src="https://github.com/user-attachments/assets/a20319b6-14b9-4b3a-940c-94f7267fe99d" /> |
+| <img width="2558" height="1598" alt="Screenshot 2026-06-05 172142" src="https://github.com/user-attachments/assets/0f382ab4-3116-4fa1-971c-91198144e1ac" /> |
 
 |               ❤️ tlinh ❤️               |
 | :-----------------------------------: |
@@ -220,7 +220,7 @@ Those fonts are used by all the themes, they need to be download and install man
 
 - [Pixelcraft Nerd Font](https://github.com/jade-tam/Pixelcraft/releases) (please download and use Nerd Font version)
 - [Pixel Code](https://qwerasd205.github.io/PixelCode/)
-- [Monofur Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Monofur.zip)
+- [Monaspice Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monaspace.zip)
 - [Space Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SpaceMono.zip)
 - [DepartureMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DepartureMono.zip) (used by tlinh theme)
 
