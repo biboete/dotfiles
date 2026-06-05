@@ -1,5 +1,14 @@
 # aquapaka-dotfiles
 
+## 3.7.0
+
+### Minor Changes
+
+- 6f131ca: feat(aqua): update status bar, reduce fontsize
+- 28a67e4: feat(wasabi): use smaller fontsize, improve icon size, fix battery icon
+- 43ac82c: feat(tlinh): change font, font size and topbar style
+- 6705aba: feat(shuri): update new font, new status/topbar style, use smaller fontsize, fixed border line missing bug
+
 ## 3.6.0
 
 ### Minor Changes
