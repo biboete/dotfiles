@@ -80,7 +80,7 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 
 ## 🎨 Themes
 
-ℹ️Note: This dotfiles are configured specifically for my 1440p screen, so things might appear larger on smaller screens. I suggest using my dotfiles as a base and customizing it to fit your specific needs.
+ℹ️Note: This dotfiles is configured for 2560x1600 resolution + 125% windows display scale (like the previews below), so it might looks nearly the same as 1920x1200 at 100% scale, everything might look bigger on lower resolution. I suggest using my dotfiles as a base and customizing it to fit your specific needs.
 
 |                            ❤️ jade ❤️                             |
 | :------------------------------------------------------------: |
