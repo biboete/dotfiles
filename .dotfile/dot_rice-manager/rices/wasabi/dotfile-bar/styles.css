@@ -54,7 +54,7 @@
   height: 100vh;
   color: var(--color-foreground);
   font-family: "Pixel Code", "Pixelcraft Nerd Font";
-  font-size: 18px;
+  font-size: 16px;
   padding: 8px;
   padding-bottom: 0;
 }
@@ -153,42 +153,43 @@ body,
 .cpu-icon {
   color: var(--color-red);
   transform: translate(0px, -1px);
+  font-size: 1.2rem;
 }
 
 .memory-icon {
   color: var(--color-green);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   transform: translate(6px, 0px);
 }
 
 .battery-icon {
   color: var(--color-yellow);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   transform: translate(6px, 2px);
 }
 
 .charging-icon {
   z-index: 100;
   position: absolute;
-  right: 1.8rem;
-  bottom: 0.4rem;
+  left: 1.2rem;
+  bottom: 0.7rem;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 1));
   color: var(--color-blue);
 }
 
 .full-icon {
   color: var(--color-green);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   z-index: 100;
   position: absolute;
-  right: 2.1rem;
-  bottom: 0.6rem;
+  left: 1.2rem;
+  bottom: 0.7rem;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 1));
 }
 
 .audio-icon {
   color: var(--color-cyan);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   transform: translateY(0.15rem) translateX(0.3rem);
 }
 
