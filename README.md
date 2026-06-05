@@ -47,7 +47,7 @@ I haven't have time to correctly refine this so I'll leave it commented for a wh
 
 --- -->
 
-## Introduction
+## 🪹 Introduction
 
 ### 🐚 Native Shell Scripting — No WSL, No Virtualization
 
@@ -91,8 +91,8 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 |                ❤️ wasabi ❤️                |
 | :-------------------------------------: |
 |         Mysterious and alluring, with eyes like deep ocean blue and an aura of fire, she exudes both danger and enchantment         |
-| ![wasabi-1](rice-previews/wasabi-1.png) |
-| ![wasabi-2](rice-previews/wasabi-2.png) |
+| <img width="2558" height="1598" alt="Screenshot 2026-06-05 174919" src="https://github.com/user-attachments/assets/fde5f200-c1fd-44c5-b648-6f87c7a4e81c" /> |
+| <img width="2558" height="1598" alt="Screenshot 2026-06-05 174935" src="https://github.com/user-attachments/assets/5952de84-ca04-461a-a722-855032eed52b" /> |
 
 |               ❤️ aqua ❤️              |
 | :---------------------------------: |
@@ -140,9 +140,7 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 
 ---
 
-## Dependency and Configuration
-
-### Core Dependencies
+## 💎 Core Dependencies
 
 > ℹ️ INFO ℹ️: This project comes with a script to install all the dependencies listed below automatically. See [this](scripts/install-packages.ps1) for the dependency installation script.
 
@@ -153,22 +151,9 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 - Package manager: **Winget**
 - Dotfiles manager: **Chezmoi**
 
-### Current Configurable Settings
-
-You can customize each theme inside `~/.rice-manager/rices` and re-apply it (see **Change theme** below)
-
-- ☑️ Windows Terminal theme
-- ☑️ GlazeWM border theme
-- ☑️ Status bar (Zebar) theme
-- ☑️ Desktop wallpaper based on rice
-- ☑️ VS Code theme
-- ~~☑️ Windows light/dark mode based on rice~~ ❌ Disabled - currently unstable and buggy
-- ❓ Windows color based on rice
-- 🚧 _under construction_
-
 ---
 
-## Installation Guide (last tested 19/01/2026, follow below video)
+## 📦 Installation Guide (last tested 19/01/2026, follow below video)
 
 <!-- ### Testing
 
@@ -342,10 +327,30 @@ Open **PowerShell**, from your user folder (Example: `C:\Users\JadeTam>`, which 
 
 ---
 
-## Optional Tweaks
+## ⚙ Configure and customize themes
 
-- Enable automatically hide the taskbar (for more vertical space).
-- Improve performance and reduce disk utilization for systems with high amount of free RAM:
+You can customize existing theme or create a new one inside `~/.local/share/chezmoi/.dotfile/dot_rice-manager/rices`, re-apply them with `chezmoi apply` command, and load them with `rice <theme-name>` (see **Change theme** below).
+
+If you created a new theme, make sure to update the `~/.local/share/chezmoi/.dotfile/dot_rice-manager/rice.sh` script to use it.
+
+Here are list of things that can be configure for each theme:
+
+- ☑️ Windows Terminal theme
+- ☑️ GlazeWM border theme
+- ☑️ Status bar (Zebar) theme
+- ☑️ Desktop wallpaper based on rice
+- ☑️ VS Code theme name
+- ~~☑️ Windows light/dark mode based on rice~~ ❌ Disabled - currently unstable and buggy
+- ❓ Windows color based on rice
+- 🚧 _under construction_
+
+---
+
+## 🪛 Optional Tweaks
+
+- Right click desktop -> View -> Untick "Show desktop icons" to hide all desktop icons (cleaner desktop without having to delete those icons).
+- Enable automatically hide the taskbar (for more vertical space, sometime I prefer to leave taskbar stay).
+- Improve performance and reduce disk utilization for systems with high amount of free RAM (use it at your own risk, maybe helpful when having > 16 gig of ram):
   - Run `scripts/high-ram-tuning.ps1` with **Powershell**.
 - Restore old context menu (Require restart):
   - Open/Run `scripts/Restore-old-context-menu.reg`.
@@ -354,7 +359,6 @@ Open **PowerShell**, from your user folder (Example: `C:\Users\JadeTam>`, which 
   - Close then re-open terminal
   -->
 - Show 'Max cpu freq' in power plan setting, allow changing maximum cpu freqency to attempt lower temperature and more stable machine **(Very useful, highly recommend for laptop)**:
-
   - Run `scripts/show-cpu-frequency-power-plan-setting.ps1` with **Powershell**
   - Search for **"Edit Power Plan" > Change Plan Settings > Change advanced power settings > Processor power management > Maximum processor frequency** (Showing after running the script, change this to preferred frequency)
 
