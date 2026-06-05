@@ -148,8 +148,8 @@ Dive in, tweak to your heart's content, and transform your Windows environment i
 
 - Terminal: **Windows Terminal**
 - Shell: **Zsh** inside MSYS2
-- Tiling Window Manager: **GlazeWM 3.9.1**
-- Bar: **Zebar 3.1.1**
+- Tiling Window Manager: **GlazeWM 3.10.1**
+- Bar: **Zebar 3.3.1**
 - Package manager: **Winget**
 - Dotfiles manager: **Chezmoi**
 
@@ -159,7 +159,7 @@ You can customize each theme inside `~/.rice-manager/rices` and re-apply it (see
 
 - ☑️ Windows Terminal theme
 - ☑️ GlazeWM border theme
-- ☑️ Zebar theme
+- ☑️ Status bar (Zebar) theme
 - ☑️ Desktop wallpaper based on rice
 - ☑️ VS Code theme
 - ~~☑️ Windows light/dark mode based on rice~~ ❌ Disabled - currently unstable and buggy
@@ -203,20 +203,20 @@ If you don't want to display it, feel free to just leave it commented out(or del
 
 ### 0️⃣ Pre-install notices
 
-- Those installation steps are not fully verified and you might stuck at any step, if you're having problem, feel free to message me on my Discord.
-- This dotfiles and its previews are in 2560x1600 resolution, everything might look bigger on lower resolution.
+- Follow my video above if you stuck somewhere, if you're still having problem, feel free to message me on my Discord.
+- This dotfiles is configured for 2560x1600 resolution + 125% windows display scale, so it might looks nearly the same as 1920x1200 at 100% scale (like the previews), everything might look bigger on lower resolution.
 - Those installation steps won't break your windows, in case things didn't go well, all you need to do are:
   - `winget uninstall ...` all packages you have installed through `install-packages.ps1`
   - Remove added task scheduler tasks
   - Remove added config files in `~/.config`
-- If you have just fresh install windows 11 and your winget command is not working, you need to go to Microsoft Store and update your "App Installer".
-- For those who use another windows 11 version (like IOT Enterprise LTSC, which doesn't come with Microsoft Store):
-  - First download the latest version of winget: <https://aka.ms/getwinget>
-  - Then open PowerShell and run: `Add-AppxPackage -Path <path to downloaded .msixbundle>` to install winget
+- If you have just fresh install windows 11 and your winget command is not working, you need to go to Microsoft Store and update your "App Installer" (current windows version doesn't seems to have this issue anymore).
+- For those who use another windows 11 version (like IOT Enterprise LTSC, which doesn't come with Winget by default):
+  - First download the latest version of Winget: <https://aka.ms/getwinget>
+  - Then open PowerShell and run: `Add-AppxPackage -Path <path to downloaded .msixbundle>` to install Winget
 
 ### 1️⃣ Install Fonts
 
-Font need to be download and install manually _(Windows is planning to allows installing fonts from winget. Stay tune!)_:
+Those fonts are used by all the themes, they need to be download and install manually:
 
 - [Pixelcraft Nerd Font](https://github.com/jade-tam/Pixelcraft/releases) (please download and use Nerd Font version)
 - [Pixel Code](https://qwerasd205.github.io/PixelCode/)
@@ -228,8 +228,8 @@ Font need to be download and install manually _(Windows is planning to allows in
 
 - Install chezmoi from Winget with: `winget install chezmoi`
 - Close and reopen terminal for chezmoi command to be recognized.
-- Initialize chezmoi and apply the dotfiles with: `chezmoi init --apply jade-tam`
-- If you are using Windows Terminal, you will notice the terminal theme changed immediately.
+- Initialize chezmoi and apply the dotfiles with: `chezmoi init --apply jade-tam` (This might take a while without any progession showing, please wait especially if your internet is slow)
+- If you are using Windows Terminal, you will notice the terminal theme changed after that.
 
 ### 3️⃣ Install packages
 
@@ -282,35 +282,7 @@ pacman -S zsh
 
 ```
 
-Open **PowerShell**, from your user folder (Example: `C:\Users\JadeTam>`), run below command to install zsh themes and configs
-
-<!--
-
-#### Note:
-
-> ⚠️ If you do end up using an MSYS2 console, make sure to
-> change directory to your user folder.
-> You can do this by running:
-> ~ cd /c/
-> ~ cd Users/JadeTam (replace JadeTam with your actual username) -->
-
-```
-# Install Theme: Powerlevel10k
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ./.config/zsh/themes/powerlevel10k
-
-# Install Fast Syntax Highlighting Plugin
-
-git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ./.config/zsh/plugins/fast-syntax-highlighting
-
-# Install Autosuggestions Plugin
-
-git clone https://github.com/zsh-users/zsh-autosuggestions ./.config/zsh/plugins/zsh-autosuggestions
-
-# Install History Substring Search Plugin
-
-git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zsh/plugins/zsh-history-substring-search
-```
+Open **PowerShell**, from your user folder (Example: `C:\Users\JadeTam>`, which you have to use `cd ~` to move there), run below command to install zsh themes and configs
 
 **Troubleshoot:** If git is not recognizable, try close and reopen PowerShell or check whether git is installed through running `install-packages.ps1` or not.
 
@@ -331,7 +303,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zs
 - Just need to copy the GlazeWM shortcut.
 - Open Start Up folder by pressing **Windows + R** and type in `shell:startup`
 - Paste the shortcut in here and we are done, you can also run GlazeWM now.
-- Zebar is open and close with GlazeWM.
+- Zebar is open and close with GlazeWM so you don't have to worry about it.
 
 ---
 
@@ -372,11 +344,6 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zs
 
 ## Optional Tweaks
 
-<!---
-- Disable windows 11 rounded corners:
-  - Install windows 11 rounded corners setup: [win11-toggle-rounded-corners](https://github.com/oberrich/win11-toggle-rounded-corners)
--->
-
 - Enable automatically hide the taskbar (for more vertical space).
 - Improve performance and reduce disk utilization for systems with high amount of free RAM:
   - Run `scripts/high-ram-tuning.ps1` with **Powershell**.
@@ -390,20 +357,6 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ./.config/zs
 
   - Run `scripts/show-cpu-frequency-power-plan-setting.ps1` with **Powershell**
   - Search for **"Edit Power Plan" > Change Plan Settings > Change advanced power settings > Processor power management > Maximum processor frequency** (Showing after running the script, change this to preferred frequency)
-
-- If you are having problems with Alt+Tab not working properly with GlazeWM, try setting tiling mode from 'tiling' to 'floating':
-  - Navigate to `%USERPROFILE%\.glzr\glazewm`
-  - Open `config.yaml` with preferred text editor(Notepad is fine)
-  - Then, change this:
-
-  ```yaml
-  # ....
-  window_behavior:
-    initial_state: "floating"
-  # ....
-  ```
-
-  - There are other configurable settings in this file, feel free to explore and tweak it to your liking.
 
 ### Other information
 
