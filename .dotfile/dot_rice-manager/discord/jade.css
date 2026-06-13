@@ -1,0 +1,81 @@
+/**
+ * @name rice-jade
+ * @author jade-tam rice (custom)
+ * @description Discord theme matching the 'jade' rice. Auto-applied by the rice command.
+ * @version 1.0.0
+ */
+.theme-dark, .theme-darker, .theme-midnight {
+  --c-bg-darkest: #0c1619;
+  --c-bg-darker: #0f1c20;
+  --c-bg: #122024;
+  --c-bg-high: #16282d;
+  --c-bg-raised: #1c3239;
+  --c-accent: #b1be74;
+  --c-accent-dim: #8a9656;
+  --c-text: #c3c6c8;
+  --c-muted: #7e9296;
+  --c-faint: #4a5e62;
+
+  --background-primary: var(--c-bg);
+  --background-secondary: var(--c-bg-darker);
+  --background-secondary-alt: var(--c-bg-high);
+  --background-tertiary: var(--c-bg-darkest);
+  --background-floating: var(--c-bg-darkest);
+  --background-nested-floating: var(--c-bg-darker);
+  --background-accent: var(--c-accent);
+  --background-modifier-hover: #b1be7414;
+  --background-modifier-selected: #b1be7422;
+  --background-modifier-active: #b1be742e;
+  --background-mentioned: #b1be7414;
+  --background-mentioned-hover: #b1be741f;
+  --channeltextarea-background: var(--c-bg-high);
+  --input-background: var(--c-bg-high);
+
+  --bg-base-lower: var(--c-bg-darkest);
+  --bg-base-low: var(--c-bg-darker);
+  --bg-base: var(--c-bg);
+  --bg-base-high: var(--c-bg-high);
+  --bg-surface-overlay: var(--c-bg-darker);
+  --bg-surface-raised: var(--c-bg-raised);
+  --bg-surface-high: var(--c-bg-high);
+  --bg-surface-higher: var(--c-bg-raised);
+  --bg-surface-highest: var(--c-bg-raised);
+  --bg-mod-faint: #b1be740d;
+  --bg-mod-subtle: #b1be7414;
+  --bg-mod-regular: #b1be741f;
+  --bg-mod-strong: #b1be7429;
+  --bg-mod-stronger: #b1be7433;
+
+  --text-normal: var(--c-text);
+  --text-default: var(--c-text);
+  --text-muted: var(--c-muted);
+  --text-faint: var(--c-faint);
+  --text-link: var(--c-accent);
+  --header-primary: var(--c-text);
+  --header-secondary: var(--c-muted);
+  --channels-default: var(--c-muted);
+  --channel-icon: var(--c-faint);
+  --interactive-normal: var(--c-muted);
+  --interactive-hover: var(--c-text);
+  --interactive-active: #ffffff;
+  --interactive-muted: var(--c-faint);
+
+  --brand-experiment: var(--c-accent);
+  --brand-experiment-560: var(--c-accent);
+  --brand-experiment-600: var(--c-accent-dim);
+  --brand-500: var(--c-accent);
+  --brand-560: var(--c-accent);
+  --brand-600: var(--c-accent-dim);
+  --button-filled-brand-background: var(--c-accent);
+  --button-filled-brand-background-hover: var(--c-accent-dim);
+  --button-filled-brand-text: #0c1619;
+  --mention-foreground: var(--c-text);
+
+  --scrollbar-thin-thumb: var(--c-bg-raised);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: var(--c-bg-raised);
+  --scrollbar-auto-track: transparent;
+}
+
+.theme-dark [class*="guilds_"],
+.theme-dark [class*="appMount"] { background-color: var(--c-bg-darkest); }

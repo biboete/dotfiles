@@ -69,6 +69,18 @@ set_vscode_theme() {
   echo "✅ VSCode theme applied!"
 }
 
+# Set Discord (Vencord) theme
+set_discord_theme() {
+  VENCORD_THEMES_DIR="$(cygpath "$APPDATA")/Vencord/themes"
+  if [ -d "$VENCORD_THEMES_DIR" ] && [ -f "./discord/$theme.css" ]; then
+    echo "Applying Discord theme..."
+    cp "./discord/$theme.css" "$VENCORD_THEMES_DIR/rice-active.theme.css"
+    echo "✅ Discord theme applied!"
+  else
+    echo "ℹ️ Skipping Discord (Vencord not installed)"
+  fi
+}
+
 # Set windows terminal theme
 set_windows_terminal_theme() {
   echo "Applying windows terminal theme..."
@@ -119,6 +131,7 @@ for theme in "${avaiableThemes[@]}"; do
     set_windows_terminal_theme
     set_zebar_theme
     set_vscode_theme
+    set_discord_theme
     set_glazewm_config
     # change_windows_lightdark_mode # Disabled, currently too buggy
 
