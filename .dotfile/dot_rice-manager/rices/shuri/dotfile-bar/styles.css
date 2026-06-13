@@ -53,8 +53,8 @@
   height: 100vh;
   color: var(--color-foreground);
   font-family: "MonaspiceRn Nerd Font Mono";
-  font-size: 16px;
-  padding: 8px;
+  font-size: 14px; /* tuned down from 16px for 1920x1080 @ 100% scale */
+  padding: 6px;
   padding-bottom: 0;
 }
 
