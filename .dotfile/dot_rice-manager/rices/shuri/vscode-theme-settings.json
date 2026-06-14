@@ -4,8 +4,8 @@
   "material-icon-theme.folders.color": "#c594ff",
   "material-icon-theme.files.color": "#acc79b",
   "editor.fontFamily": "MonaspiceRn Nerd Font Mono",
-  "editor.fontSize": 16,
-  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#c594ff",
     "terminalCursor.foreground": "#c594ff"

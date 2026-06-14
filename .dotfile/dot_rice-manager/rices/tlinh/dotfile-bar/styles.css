@@ -54,7 +54,7 @@
   height: 100vh;
   color: var(--color-foreground);
   font-family: "DepartureMono Nerd Font";
-  font-size: 16px;
+  font-size: 13px;
   padding: 0px;
   padding-bottom: 0;
 }
@@ -101,7 +101,7 @@ body,
 .info {
   display: inline-block;
   /* Max width for EACH info text */
-  max-width: 360px;
+  max-width: 338px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

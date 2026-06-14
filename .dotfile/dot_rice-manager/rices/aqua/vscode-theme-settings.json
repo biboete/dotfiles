@@ -4,8 +4,8 @@
   "material-icon-theme.folders.color": "#FFB454",
   "material-icon-theme.files.color": "#B8CC52",
   "editor.fontFamily": "'Pixelcraft Nerd Font'",
-  "editor.fontSize": 16,
-  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#c6a0f6",
     "terminalCursor.foreground": "#c6a0f6"

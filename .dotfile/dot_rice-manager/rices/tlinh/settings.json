@@ -4,12 +4,12 @@
   "windowsTerminalFont": {
     "cellHeight": "1.2",
     "face": "DepartureMono Nerd Font",
-    "size": 12
+    "size": 11
   },
   "glazewmConfig": {
     "focusedWindowsColor": "#ff6188",
     "otherWindowsColor": "#221f22",
-    "windowsGap": "8px",
+    "windowsGap": "7px",
     "cornerStyle": "rounded"
   }
 }

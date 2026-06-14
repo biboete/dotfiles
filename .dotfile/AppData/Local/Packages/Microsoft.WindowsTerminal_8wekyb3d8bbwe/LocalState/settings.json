@@ -63,10 +63,10 @@
       "font": {
         "cellHeight": "1.2",
         "face": "SpaceMono Nerd Font",
-        "size": 12
+        "size": 11
       },
       "opacity": 90,
-      "padding": "16",
+      "padding": "13",
       "scrollbarState": "hidden"
     },
     "list": [
