@@ -24,16 +24,13 @@ Usage:
 # Set zebar config
 set_zebar_theme() {
   echo "Applying zebar theme..."
-  # Restart Zebar. Kill it FIRST so it doesn't lock the bar files during the copy.
-  # NOTE: taskkill /IM (kill-by-name) relies on WMI, which is broken on this machine,
-  # so use PowerShell Stop-Process (WMI-independent) instead.
-  echo "Restarting Zebar..."
-  powershell -NoProfile -Command "Stop-Process -Name zebar -Force -ErrorAction SilentlyContinue" > /dev/null 2>&1
-  sleep 1
-  # Replace ~/.glzr/zebar/dotfile-bar folder with the one in the rice
+  # Replace ~/.glzr/zebar/dotifle-bar folder with the one in the rice
   rm -rf ~/.glzr/zebar/dotfile-bar
   cp -r ./rices/$theme/dotfile-bar ~/.glzr/zebar/dotfile-bar
-  powershell -NoProfile -Command "Start-Process 'C:\Program Files\glzr.io\Zebar\zebar.exe'" > /dev/null 2>&1
+  # Restart Zebar
+  echo "Restarting Zebar..."
+  taskkill -IM zebar.exe -F > /dev/null 2>&1
+  start zebar > /dev/null 2>&1 &
   echo "✅ Zebar theme applied!"
 }
 
