@@ -24,17 +24,12 @@ Usage:
 # Set zebar config
 set_zebar_theme() {
   echo "Applying zebar theme..."
-  # Restart Zebar. Kill it FIRST (releases the bar files), then relaunch THROUGH GlazeWM
-  # via `glazewm command shell-exec zebar` so the new bar keeps the WM/IPC connection
-  # (workspace widget). NOTE: `taskkill /IM` relies on WMI, which is broken on this
-  # machine, so use PowerShell Stop-Process (WMI-independent) for the kill.
-  echo "Restarting Zebar..."
-  powershell -NoProfile -Command "Stop-Process -Name zebar -Force -ErrorAction SilentlyContinue" > /dev/null 2>&1
-  sleep 1
-  # Replace ~/.glzr/zebar/dotfile-bar folder with the one in the rice
-  rm -rf ~/.glzr/zebar/dotfile-bar
-  cp -r ./rices/$theme/dotfile-bar ~/.glzr/zebar/dotfile-bar
-  glazewm command shell-exec zebar > /dev/null 2>&1
+  # Zebar hot-reloads its widget files, so just OVERWRITE them in place (no rm, no kill,
+  # no restart). Force-killing zebar orphaned its taskbar (AppBar) reservation on this
+  # machine (zebar ignores graceful close, and Windows purges the dead reservation only
+  # lazily), which made the bar creep DOWN a little on every switch. Copying in place and
+  # letting zebar hot-reload avoids touching the process entirely -> no creep.
+  cp -rf ./rices/$theme/dotfile-bar/. ~/.glzr/zebar/dotfile-bar/
   echo "✅ Zebar theme applied!"
 }
 
