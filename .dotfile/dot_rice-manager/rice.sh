@@ -24,12 +24,13 @@ Usage:
 # Set zebar config
 set_zebar_theme() {
   echo "Applying zebar theme..."
-  # Zebar hot-reloads its widget files, so just OVERWRITE them in place (no rm, no kill,
-  # no restart). Force-killing zebar orphaned its taskbar (AppBar) reservation on this
-  # machine (zebar ignores graceful close, and Windows purges the dead reservation only
-  # lazily), which made the bar creep DOWN a little on every switch. Copying in place and
-  # letting zebar hot-reload avoids touching the process entirely -> no creep.
+  # Put the new theme's bar files in place (zebar does NOT reliably hot-reload, so a restart
+  # is required for the bar to actually change).
   cp -rf ./rices/$theme/dotfile-bar/. ~/.glzr/zebar/dotfile-bar/
+  # Restart zebar via the helper, which removes zebar's orphaned taskbar (AppBar) reservation
+  # with SHAppBarMessage(ABM_REMOVE) so the bar changes AND does not creep downward.
+  echo "Restarting Zebar..."
+  powershell ./reload-zebar.ps1 > /dev/null 2>&1
   echo "✅ Zebar theme applied!"
 }
 
