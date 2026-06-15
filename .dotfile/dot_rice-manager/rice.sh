@@ -117,6 +117,20 @@ set_desktop_wallpaper() {
   echo "✅ Desktop wallpaper changed!"
 }
 
+# Set Spotify (Spicetify) theme. Skips gracefully if Spicetify isn't installed.
+# One-time setup: run setup-spicetify.ps1 in a NON-admin PowerShell.
+set_spotify_theme() {
+  spice="$HOME/AppData/Local/spicetify/spicetify.exe"
+  if [ -f "$spice" ]; then
+    echo "Applying Spotify theme..."
+    "$spice" config current_theme Comfy color_scheme "$theme" > /dev/null 2>&1
+    "$spice" apply > /dev/null 2>&1
+    echo "✅ Spotify theme applied!"
+  else
+    echo "ℹ️ Skipping Spotify (Spicetify not installed — run setup-spicetify.ps1)"
+  fi
+}
+
 # Goes to this script location first
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$parent_path"
@@ -133,6 +147,7 @@ for theme in "${avaiableThemes[@]}"; do
     set_vscode_theme
     set_discord_theme
     set_glazewm_config
+    set_spotify_theme
     # change_windows_lightdark_mode # Disabled, currently too buggy
 
     echo " "
