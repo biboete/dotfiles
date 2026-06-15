@@ -24,13 +24,17 @@ Usage:
 # Set zebar config
 set_zebar_theme() {
   echo "Applying zebar theme..."
-  # Replace ~/.glzr/zebar/dotifle-bar folder with the one in the rice
+  # Restart Zebar. Kill it FIRST (releases the bar files), then relaunch THROUGH GlazeWM
+  # via `glazewm command shell-exec zebar` so the new bar keeps the WM/IPC connection
+  # (workspace widget). NOTE: `taskkill /IM` relies on WMI, which is broken on this
+  # machine, so use PowerShell Stop-Process (WMI-independent) for the kill.
+  echo "Restarting Zebar..."
+  powershell -NoProfile -Command "Stop-Process -Name zebar -Force -ErrorAction SilentlyContinue" > /dev/null 2>&1
+  sleep 1
+  # Replace ~/.glzr/zebar/dotfile-bar folder with the one in the rice
   rm -rf ~/.glzr/zebar/dotfile-bar
   cp -r ./rices/$theme/dotfile-bar ~/.glzr/zebar/dotfile-bar
-  # Restart Zebar
-  echo "Restarting Zebar..."
-  taskkill -IM zebar.exe -F > /dev/null 2>&1
-  start zebar > /dev/null 2>&1 &
+  glazewm command shell-exec zebar > /dev/null 2>&1
   echo "✅ Zebar theme applied!"
 }
 
