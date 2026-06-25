@@ -13,7 +13,7 @@ winget install --id MSYS2.MSYS2 -e --silent --source winget --accept-source-agre
 winget install --id Discord.Discord -e --silent --source winget --accept-source-agreements --accept-package-agreements;
 winget install --id Google.Chrome -e --silent --source winget --accept-source-agreements --accept-package-agreements;
 winget install --id Google.GoogleDrive -e --silent --source winget --accept-source-agreements --accept-package-agreements;
-winget install "Lenovo Vantage" --silent --source winget --accept-source-agreements --accept-package-agreements;
+# winget install "Lenovo Vantage" --silent --source winget --accept-source-agreements --accept-package-agreements; # removed: Lenovo OEM bloat, not requested, not on Lenovo hardware
 winget install --id 7zip.7zip -e --silent --source winget --accept-source-agreements --accept-package-agreements;
 winget install --id CoreyButler.NVMforWindows -e --silent --source winget --accept-source-agreements --accept-package-agreements;
 winget install -e --id Microsoft.VisualStudioCode --silent --source winget --accept-source-agreements --accept-package-agreements;
